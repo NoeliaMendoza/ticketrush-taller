@@ -1,0 +1,1 @@
+[36mINFO[0m[0000] CPU_PREFLIGHT {"validationCode":"1762EE35B3713B92","iterations":200000,"processingTime":374.99,"threadId":1,"mode":"WORKER","hostname":"ticket-rush-667758649f-7zqfc"} 

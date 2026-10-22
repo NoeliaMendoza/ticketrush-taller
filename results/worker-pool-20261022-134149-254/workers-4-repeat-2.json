@@ -1,0 +1,177 @@
+{
+    "metrics": {
+        "data_received": {
+            "count": 742973,
+            "rate": 23894.74729374997
+        },
+        "vus_max": {
+            "min": 25,
+            "max": 25,
+            "value": 25
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 5.5405,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.013837823624595472,
+            "min": 0
+        },
+        "http_reqs": {
+            "count": 2472,
+            "rate": 79.50196751449909
+        },
+        "data_sent": {
+            "count": 188068,
+            "rate": 6048.453085160523
+        },
+        "http_req_duration": {
+            "avg": 18.506416423948195,
+            "min": 0,
+            "med": 1.6545,
+            "max": 729.5427,
+            "p(90)": 3.913,
+            "p(95)": 9.426784999999953
+        },
+        "http_req_blocked": {
+            "avg": 0.030436650485436884,
+            "min": 0,
+            "med": 0,
+            "max": 26.6156,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "ping_duration": {
+            "avg": 2.1381671848739496,
+            "min": 0,
+            "med": 1.6228,
+            "max": 44.0772,
+            "p(90)": 3.1974799999999997,
+            "p(95)": 4.533164999999988
+        },
+        "cpu_duration": {
+            "max": 729.5427,
+            "p(90)": 566.4816,
+            "p(95)": 603.56385,
+            "avg": 440.30068021978025,
+            "min": 320.4404,
+            "med": 405.8181
+        },
+        "cpu_requests": {
+            "count": 91,
+            "rate": 2.92665009863245
+        },
+        "cpu_errors": {
+            "passes": 0,
+            "fails": 91,
+            "thresholds": {
+                "rate==0": false
+            },
+            "value": 0
+        },
+        "iteration_duration": {
+            "avg": 259.7730064751118,
+            "min": 250.2631,
+            "med": 252.3103,
+            "max": 731.3051,
+            "p(90)": 255.053,
+            "p(95)": 260.10825
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2472,
+            "value": 0
+        },
+        "http_req_receiving": {
+            "max": 8.4755,
+            "p(90)": 0.6668600000000001,
+            "p(95)": 0.9594199999999997,
+            "avg": 0.19213721682847892,
+            "min": 0,
+            "med": 0
+        },
+        "ping_requests": {
+            "count": 2380,
+            "rate": 76.54315642577177
+        },
+        "vus": {
+            "max": 22,
+            "value": 1,
+            "min": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 18.506416423948195,
+            "min": 0,
+            "med": 1.6545,
+            "max": 729.5427,
+            "p(90)": 3.913,
+            "p(95)": 9.426784999999953
+        },
+        "http_req_waiting": {
+            "avg": 18.28978284789639,
+            "min": 0,
+            "med": 1.5042499999999999,
+            "max": 729.5427,
+            "p(90)": 3.6949,
+            "p(95)": 8.95822999999996
+        },
+        "iterations": {
+            "count": 2471,
+            "rate": 79.46980652440422
+        },
+        "checks": {
+            "passes": 2471,
+            "fails": 0,
+            "thresholds": {
+                "rate==1": false
+            },
+            "value": 1
+        },
+        "http_req_sending": {
+            "med": 0,
+            "max": 13.8722,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.024496359223300963,
+            "min": 0
+        },
+        "ping_errors": {
+            "passes": 0,
+            "fails": 2380,
+            "thresholds": {
+                "rate==0": false
+            },
+            "value": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "Ping responde correctamente": {
+                    "path": "::Ping responde correctamente",
+                    "id": "85064a6c1a0add071f6b836b44569eb9",
+                    "passes": 2380,
+                    "fails": 0,
+                    "name": "Ping responde correctamente"
+                },
+                "CPU responde correctamente": {
+                    "fails": 0,
+                    "name": "CPU responde correctamente",
+                    "path": "::CPU responde correctamente",
+                    "id": "638b8e21543115861362088cfacfe840",
+                    "passes": 91
+                }
+            }
+    }
+}

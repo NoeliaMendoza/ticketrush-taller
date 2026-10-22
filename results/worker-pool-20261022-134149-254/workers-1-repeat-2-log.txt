@@ -1,0 +1,1 @@
+[36mINFO[0m[0000] CPU_PREFLIGHT {"mode":"WORKER","hostname":"ticket-rush-86dfd679b6-hsdb6","validationCode":"9CA91E62D5548D03","iterations":200000,"processingTime":324.77,"threadId":1} 
