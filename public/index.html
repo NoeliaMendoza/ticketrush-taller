@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema de gestión de reservas para eventos">
+  <title>TicketRush | Panel de reservas</title>
+
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- Encabezado principal -->
+    <header class="header">
+      <div>
+        <span class="eyebrow">APLICACIONES DISTRIBUIDAS</span>
+        <h1>TicketRush</h1>
+        <p>Sistema de gestión de reservas para eventos</p>
+      </div>
+
+      <span class="status" id="server-status" role="status">
+        Conectando...
+      </span>
+    </header>
+
+    <!-- Presentación del panel -->
+    <section class="intro">
+      <h2>Panel de reservas</h2>
+      <p>
+        Administra los cupos del evento y consulta
+        el estado de las reservas en tiempo real.
+      </p>
+    </section>
+
+    <!-- Estadísticas de reservas -->
+    <section class="stats">
+
+      <article class="stat-card">
+        <span>Cupos disponibles</span>
+        <strong id="available">--</strong>
+        <small>Cupos restantes del evento</small>
+      </article>
+
+      <article class="stat-card">
+        <span>Reservas aprobadas</span>
+        <strong id="approved">--</strong>
+        <small>Solicitudes exitosas</small>
+      </article>
+
+      <article class="stat-card">
+        <span>Reservas rechazadas</span>
+        <strong id="rejected">--</strong>
+        <small>Solicitudes sin disponibilidad</small>
+      </article>
+
+    </section>
+
+    <!-- Gestión de cupos -->
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Capacidad del evento</h2>
+        <span id="capacity-label">0 / 20</span>
+      </div>
+
+      <div class="progress"
+           role="progressbar"
+           aria-label="Cupos reservados"
+           aria-valuemin="0"
+           aria-valuemax="20"
+           aria-valuenow="0"
+           id="capacity-progress">
+        <div id="progress-fill"></div>
+      </div>
+
+      <div class="actions">
+        <button
+          id="reserve-btn"
+          class="primary"
+          type="button">
+          Reservar cupo
+        </button>
+
+        <button
+          id="reset-btn"
+          class="secondary"
+          type="button">
+          Reiniciar reservas
+        </button>
+      </div>
+
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- Registro de actividad -->
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Actividad reciente</h2>
+        <span id="hostname">Servidor: --</span>
+      </div>
+
+      <ul id="activity-list">
+        <li>Aún no se han registrado actividades.</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
