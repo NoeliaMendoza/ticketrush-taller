@@ -1,0 +1,19 @@
+{
+    "name":  "ticket-rush",
+    "version":  "1.0.0",
+    "description":  "Sistema distribuido de reservas de eventos",
+    "main":  "src/server.js",
+    "scripts":  {
+                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+                    "start":  "node src/server.js"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "type":  "commonjs",
+    "dependencies":  {
+                         "redis":  "^5.0.0"
+                     }
+}
